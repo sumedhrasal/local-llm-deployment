@@ -1,0 +1,19 @@
+{
+  "$schema": "https://pi.dev/schemas/models.schema.json",
+  "providers": {
+    "local": {
+      "baseUrl": "http://localhost:8000/v1",
+      "api": "openai-completions",
+      "apiKey": "local",
+      "models": [
+        {
+          "id": "Qwen/Qwen3-8B-AWQ",
+          "contextWindow": 32768,
+          "maxTokens": 4096,
+          "reasoning": true,
+          "compat": { "thinkingFormat": "qwen-chat-template" }
+        }
+      ]
+    }
+  }
+}
